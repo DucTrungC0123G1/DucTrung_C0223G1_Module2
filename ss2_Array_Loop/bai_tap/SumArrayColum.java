@@ -16,7 +16,6 @@ public class SumArrayColum {
             for (int j = 0; j < m; j++) {
                 arr[i][j] = Integer.parseInt(sc.nextLine());
             }
-
         }
         System.out.println("Nhap cot can tinh");
         int col = Integer.parseInt(sc.nextLine());
