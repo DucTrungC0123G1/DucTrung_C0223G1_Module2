@@ -1,4 +1,4 @@
-package ss2_Array_Loop.bai_tap;
+package ss2_array_loop.bai_tap;
 
 import java.util.Arrays;
 import java.util.Objects;
