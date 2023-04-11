@@ -9,5 +9,6 @@ public class Check {
         MovablePoint movablePoint = new MovablePoint(2, 4, 2, 5);
         System.out.println(movablePoint);
         System.out.println(movablePoint.move());
+
     }
 }
