@@ -12,25 +12,23 @@ public class Bracket {
         Stack<String> stack = new Stack<>();
         Stack<String> stack1 = new Stack<>();
         String[] arr = str.split("");
-        int n= arr.length;
+        int n = arr.length;
         boolean flag = false;
         System.out.println(Arrays.toString(arr));
-        for (int i = 0; i <n; i++) {
-            if (arr[i].equals("(")){
+        for (int i = 0; i < n; i++) {
+            if (arr[i].equals("(")) {
                 stack.push(arr[i]);
             } else if (arr[i].equals(")")) {
                 stack.push(arr[i]);
-
             }
         }
         System.out.println(stack);
-        if (stack.size()%2==0){
+        if (stack.size() % 2 == 0) {
             flag = true;
-
         }
-        if (flag){
+        if (flag) {
             System.out.println("True");
-        }else {
+        } else {
             System.out.println("False");
         }
 
