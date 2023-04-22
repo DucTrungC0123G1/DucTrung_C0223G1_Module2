@@ -11,7 +11,7 @@ public class StaffService implements IStaffService {
         System.out.println("Nhap Vao Ten");
         String name = sc.nextLine();
         System.out.println("Nhap Vao Gioi Tinh");
-        Boolean gender = sc.nextLine();
+        String gender = sc.nextLine();
         System.out.println("Nhap Vao Nam Sinh");
         String birthDay = sc.nextLine();
 
