@@ -24,15 +24,16 @@ public class WriteReadText {
 
         }
     }
-    public static List<String>readFile(String pathFile){
-        List<String>list = new ArrayList<>();
+
+    public static List<String> readFile(String pathFile) {
+        List<String> list = new ArrayList<>();
         File file = new File(pathFile);
         FileReader fr = null;
         String line = null;
-        try{
-            fr=new FileReader(file);
+        try {
+            fr = new FileReader(file);
             BufferedReader bw = new BufferedReader(fr);
-            while ((line=bw.readLine())!=null){
+            while ((line = bw.readLine()) != null) {
                 list.add(line);
             }
             bw.close();
