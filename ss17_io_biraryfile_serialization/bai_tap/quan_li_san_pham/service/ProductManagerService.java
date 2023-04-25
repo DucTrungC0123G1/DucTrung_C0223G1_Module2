@@ -12,7 +12,7 @@ public class ProductManagerService implements IProductManagerService {
     public static String PATH = "ss17_io_biraryfile_serialization/bai_tap/quan_li_san_pham/common/Product.csv";
     Scanner sc = new Scanner(System.in);
     private static ProductManagerRepository productRepository = new ProductManagerRepository();
-    static List<Product> productList = productRepository.getProductList();
+//    static List<Product> productList = productRepository.getProductList();
 
 
     @Override
@@ -29,6 +29,7 @@ public class ProductManagerService implements IProductManagerService {
     public void searchProduct() {
         System.out.println("Enter NameProduct");
         String nameProduct = sc.nextLine();
+        List<Product> productList = productRepository.getProductList();
         for (int i = 0; i < productList.size(); i++) {
             if (productList.get(i).getName().contains(nameProduct)) {
                 System.out.println("Had Found Position" + (i + 1));
