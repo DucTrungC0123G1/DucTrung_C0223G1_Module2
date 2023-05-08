@@ -4,14 +4,14 @@ public abstract class Person {
     String name;
     String birthDay;
     boolean gender;
-    long cardID;
-    int phone;
+    String cardID;
+    long phone;
     String email;
 
     public Person() {
     }
 
-    public Person(String name, String birthDay, boolean gender, int cardID, int phone, String email) {
+    public Person(String name, String birthDay, boolean gender, String cardID, long phone, String email) {
         this.name = name;
         this.birthDay = birthDay;
         this.gender = gender;
@@ -44,19 +44,19 @@ public abstract class Person {
         this.gender = gender;
     }
 
-    public long getCardID() {
+    public String getCardID() {
         return cardID;
     }
 
-    public void setCardID(long cardID) {
+    public void setCardID(String cardID) {
         this.cardID = cardID;
     }
 
-    public int getPhone() {
+    public long getPhone() {
         return phone;
     }
 
-    public void setPhone(int phone) {
+    public void setPhone(long phone) {
         this.phone = phone;
     }
 

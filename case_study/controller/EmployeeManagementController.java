@@ -1,8 +1,12 @@
 package case_study.controller;
 
+import case_study.repository.EmployeeRepository;
+import case_study.service.EmployeeService;
+
 import java.util.Scanner;
 
 public class EmployeeManagementController {
+    private EmployeeService employeeService = new EmployeeService();
     public void displayMenuEmployee(){
         Scanner sc = new Scanner(System.in);
         boolean flag = true;
@@ -16,12 +20,15 @@ public class EmployeeManagementController {
             String choice = sc.nextLine();
             switch (choice){
                 case "1":
+                    employeeService.displayEmployeeList();
                     //diplay
                     break;
                 case "2":
+                    employeeService.addNewEmployee();
                     //add
                     break;
                 case "3":
+                    employeeService.editEmployee();
                     //edit
                     break;
                 case "4":
